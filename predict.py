@@ -98,7 +98,6 @@ with open(os.path.join('Models', 'condition.pkl'), 'rb') as f:
 
 # Predict the condition for each day
 conditions = classifier.predict(predict_df.drop('ds', axis=1))
-print(len(conditions))
 
 for i in range(0, len(str_dates)):
     str_date = str_dates[i]
